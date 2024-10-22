@@ -184,10 +184,6 @@ footer{
 }
 
 @media (max-width: 480px) {
-    .logo img {
-        height: 20px;
-    }
-
     .header {
         padding: 10px;
     }
