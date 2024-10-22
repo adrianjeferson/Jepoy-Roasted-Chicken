@@ -28,7 +28,7 @@ body p, a{
     display: none; 
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 30px;
     cursor: pointer;
 }
 
@@ -126,38 +126,41 @@ footer{
 
 @media (max-width: 768px) {
     .logo img {
-        height: 80px;
+        height: 50px;
     }
 
     .header {
-        flex-direction: row;
-        align-items: center;
         padding: 10px;
+    }
+
+    .navigation {
+        display: none; 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #D9D9D9;
+        text-align: center;
     }
 
     .navigation ul {
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        padding: 10px;
+        padding: 0;
     }
 
-    .navigation li {
-        margin: 5px 0;
+    .navigation ul li {
+        padding: 1rem 0;
     }
 
     .nav-toggle {
-        padding-right: 20px;
         display: block;
-    }
-
-    .navigation {
-        display: none;
+        padding-right: 20px;
     }
 
     .navigation.active {
-        display: flex; 
+        display: block;
     }
+
 
     main h1 {
         font-size: 30px;
@@ -182,7 +185,7 @@ footer{
 
 @media (max-width: 480px) {
     .logo img {
-        height: 60px;
+        height: 20px;
     }
 
     .header {
