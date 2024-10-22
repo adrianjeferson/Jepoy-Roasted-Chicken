@@ -1,0 +1,63 @@
+#specials {
+    text-align: center;
+    padding: 20px;
+}
+
+.promos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.promo-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding: 15px;
+}
+
+.promo-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #ffb347;
+}
+
+.promo-card h2 {
+    margin: 15px 0;
+    color: #8a2b06;
+}
+
+.promo-card p {
+    font-size: 16px;
+    padding: 0 10px;
+    color: #555;
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #d32f2f; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #a62828; 
+}
+
+.promo-card:hover {
+    transform: scale(1.05);
+}
+
+.more-text {
+    display: none;
+}

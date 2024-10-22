@@ -1,0 +1,181 @@
+.menu-container {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.menu-layout {
+    display: flex; /* Create a flex container for layout */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: space-between; /* Space items evenly */
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px; /* Space between menu items */
+
+}
+
+.menu-item {
+    display: flex; /* Use flexbox for side-by-side layout */
+    background-color: white; /* Light Yellow for menu items */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px); /* Subtle hover lift effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.menu-image {
+    width: 150px; /* Fixed width for images */
+    height: 200px; /* Keep aspect ratio */
+    object-fit: cover; /* Cover image without distortion */
+    margin-right: 20px; /* Space between image and details */
+    border-radius: 8px; /* Rounded corners for images */
+    transition: transform 0.3s ease; /* Smooth image transition */
+}
+
+.menu-image:hover {
+    transform: scale(1.05); /* Slight zoom effect on image hover */
+}
+
+.item-details {
+    flex-grow: 1; /* Allow details to fill available space */
+}
+
+.item-details p {
+    margin: 5px 0;
+    font-size: 0.9rem; /* Font size for description */
+    color:#666;
+}
+
+.item-details .price {
+    font-weight: bold;
+    font-size: 1.1rem; /* Larger size for price */
+    color: black;
+}
+
+.add-to-cart {
+    background-color: #d32f2f; /* Crimson Red for buttons */
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Add transition for hover effect */
+}
+
+.add-to-cart:hover {
+    background-color: #a62828; /* Darker red on hover */
+}
+
+.cart {
+    background-color: #eee; /* Light Gray for cart */
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%; /* Full width for cart */
+    max-width: 400px; /* Max width for cart section */
+    margin-left: 20px; /* Space from menu items */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.cart h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px; /* Rounded corners for cart item images */
+}
+
+.cart-details {
+    margin-left: 10px; /* Space between image and details */
+    flex-grow: 1; /* Allow details to fill available space */
+}
+
+.cart-details h3 {
+    margin: 0;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity button {
+    background-color: #d32f2f; /* Crimson Red for buttons */
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Checkout Button Styles */
+.checkout-container {
+    display: flex;
+    flex-direction: column; /* Stack checkout button below cart */
+    margin-top: 10px; /* Add margin to separate from cart */
+}
+
+.checkout {
+    background-color: #4B9CD3; /* Sky Blue for checkout button */
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Add transition for hover effect */
+}
+
+.checkout:hover {
+    background-color: #2A9D8F; /* Darker turquoise on hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .menu-layout {
+        flex-direction: column; /* Stack layout on smaller screens */
+    }
+
+    .cart {
+        margin-left: 0; /* Remove left margin on smaller screens */
+        margin-top: 20px; /* Add top margin on smaller screens */
+    }
+
+    .checkout-container {
+        margin-top: 10px; /* Add margin on smaller screens */
+    }
+}
+
+/* Additional Styles for Extra Small Screens */
+@media (max-width: 480px) {
+    .cart {
+        width: 100%; /* Full width for cart on extra small screens */
+        margin: 0; /* Remove margin */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .checkout {
+        padding: 8px; /* Reduce padding for checkout button */
+    }
+}
