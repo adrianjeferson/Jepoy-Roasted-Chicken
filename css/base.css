@@ -126,7 +126,7 @@ footer{
 
 @media (max-width: 768px) {
     .logo img {
-        height: 70px;
+        height: 60px;
     }
 
     .header {
@@ -185,7 +185,7 @@ footer{
 
 @media (max-width: 480px) {
     .logo img {
-        height: 60px;
+        height: 40px;
     }
     
     .header {
