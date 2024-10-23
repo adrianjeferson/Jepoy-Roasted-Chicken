@@ -126,11 +126,11 @@ footer{
 
 @media (max-width: 768px) {
     main{
-        margin-top: 84px;
+        margin-top: 104px;
     }
     
     .logo img {
-        height: 60px;
+        height: 80px;
     }
 
     .header {
@@ -188,8 +188,13 @@ footer{
 }
 
 @media (max-width: 480px) {
+    main{
+        margin-top: 94px;
+    }
+
     .logo img {
-        height: 40px;
+        padding-left: 10px;
+        height: 70px;
     }
     
     .header {
